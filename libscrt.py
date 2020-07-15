@@ -57,4 +57,4 @@ if __name__ == '__main__':
     file_list.pop(0) 
 
     for file in file_list:
-        print('ssh -p '+port(file)+' '+username(file)+'@'+hostname(file)+' #'+password(file))
+        print('sshpass -p'+password(file)+' ssh -p '+port(file)+' '+username(file)+'@'+hostname(file))
